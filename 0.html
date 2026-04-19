@@ -53,8 +53,17 @@
     }
 
     .num,
-    .name {
+    .name,
+    .type {
       display: inline;
+    }
+
+    .num {
+      font-weight: bold;
+      background: #f2f2f2;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-right: 4px;
     }
 
     /* 확대 모드 */
@@ -86,13 +95,17 @@
       padding: 20px;
     }
 
-    /* 확대 모드에서만 줄나눔 */
     .large-text .num,
-    .large-text .name {
+    .large-text .name,
+    .large-text .type {
       display: block;
     }
 
     .large-text .num {
+      margin-bottom: 4px;
+    }
+
+    .large-text .name {
       margin-bottom: 4px;
     }
   </style>
@@ -123,42 +136,42 @@
 
   <hr>
 
-  <p><span class="num">1열 1번</span> <span class="name">데미소다 애플 캔 900원</span></p>
-  <p><span class="num">1열 2번</span> <span class="name">데미소다 복숭아 캔 900원</span></p>
-  <p><span class="num">1열 3번</span> <span class="name">데미소다 레몬 캔 900원</span></p>
-  <p><span class="num">1열 4번</span> <span class="name">오란씨 오렌지 캔 800원</span></p>
-  <p><span class="num">1열 5번</span> <span class="name">오란씨 파인애플 캔 800원</span></p>
-  <p><span class="num">1열 6번</span> <span class="name">오로나민씨 병 1000원</span></p>
-  <p><span class="num">1열 7번</span> <span class="name">포카리스웨트 페트 1800원</span></p>
-  <p><span class="num">1열 8번</span> <span class="name">마신다 생수 페트 800원</span></p>
-  <p><span class="num">1열 9번</span> <span class="name">마신다 생수 페트 800원</span></p>
-  <p><span class="num">1열 10번</span> <span class="name">마신다 생수 페트 800원</span></p>
+  <p><span class="num">1열 1번</span><span class="name">데미소다 애플</span> <span class="type">캔 900원</span></p>
+  <p><span class="num">1열 2번</span><span class="name">데미소다 복숭아</span> <span class="type">캔 900원</span></p>
+  <p><span class="num">1열 3번</span><span class="name">데미소다 레몬</span> <span class="type">캔 900원</span></p>
+  <p><span class="num">1열 4번</span><span class="name">오란씨 오렌지</span> <span class="type">캔 800원</span></p>
+  <p><span class="num">1열 5번</span><span class="name">오란씨 파인애플</span> <span class="type">캔 800원</span></p>
+  <p><span class="num">1열 6번</span><span class="name">오로나민씨</span> <span class="type">병 1000원</span></p>
+  <p><span class="num">1열 7번</span><span class="name">포카리스웨트</span> <span class="type">페트 1800원</span></p>
+  <p><span class="num">1열 8번</span><span class="name">마신다 생수</span> <span class="type">페트 800원</span></p>
+  <p><span class="num">1열 9번</span><span class="name">마신다 생수</span> <span class="type">페트 800원</span></p>
+  <p><span class="num">1열 10번</span><span class="name">마신다 생수</span> <span class="type">페트 800원</span></p>
 
   <hr>
 
-  <p><span class="num">2열 1번</span> <span class="name">포카리스웨트 캔 1000원</span></p>
-  <p><span class="num">2열 2번</span> <span class="name">포카리스웨트 캔 1000원</span></p>
-  <p><span class="num">2열 3번</span> <span class="name">포카리스웨트 캔 1000원</span></p>
-  <p><span class="num">2열 4번</span> <span class="name">오라떼 딸기 캔 900원</span></p>
-  <p><span class="num">2열 5번</span> <span class="name">컨피던스 캔 900원</span></p>
-  <p><span class="num">2열 6번</span> <span class="name">나랑드사이다 제로 캔 800원</span></p>
-  <p><span class="num">2열 7번</span> <span class="name">나랑드사이다 제로 캔 800원</span></p>
-  <p><span class="num">2열 8번</span> <span class="name">데미소다 청포도 캔 900원</span></p>
-  <p><span class="num">2열 9번</span> <span class="name">데미소다 청포도 캔 900원</span></p>
-  <p><span class="num">2열 10번</span> <span class="name">포카리스웨트 캔 1000원</span></p>
+  <p><span class="num">2열 1번</span><span class="name">포카리스웨트</span> <span class="type">캔 1000원</span></p>
+  <p><span class="num">2열 2번</span><span class="name">포카리스웨트</span> <span class="type">캔 1000원</span></p>
+  <p><span class="num">2열 3번</span><span class="name">포카리스웨트</span> <span class="type">캔 1000원</span></p>
+  <p><span class="num">2열 4번</span><span class="name">오라떼 딸기</span> <span class="type">캔 900원</span></p>
+  <p><span class="num">2열 5번</span><span class="name">컨피던스</span> <span class="type">캔 900원</span></p>
+  <p><span class="num">2열 6번</span><span class="name">나랑드사이다 제로</span> <span class="type">캔 800원</span></p>
+  <p><span class="num">2열 7번</span><span class="name">나랑드사이다 제로</span> <span class="type">캔 800원</span></p>
+  <p><span class="num">2열 8번</span><span class="name">데미소다 청포도</span> <span class="type">캔 900원</span></p>
+  <p><span class="num">2열 9번</span><span class="name">데미소다 청포도</span> <span class="type">캔 900원</span></p>
+  <p><span class="num">2열 10번</span><span class="name">포카리스웨트</span> <span class="type">캔 1000원</span></p>
 
   <hr>
 
-  <p><span class="num">3열 1번</span> <span class="name">디앤카페 오리지널 캔 700원</span></p>
-  <p><span class="num">3열 2번</span> <span class="name">디앤카페 오리지널 캔 700원</span></p>
-  <p><span class="num">3열 3번</span> <span class="name">디앤카페 오리지널 캔 700원</span></p>
-  <p><span class="num">3열 4번</span> <span class="name">디앤카페 오리지널 캔 700원</span></p>
-  <p><span class="num">3열 5번</span> <span class="name">디앤카페 카라멜라떼 캔 1000원</span></p>
-  <p><span class="num">3열 6번</span> <span class="name">디앤카페 카라멜라떼 캔 1000원</span></p>
-  <p><span class="num">3열 7번</span> <span class="name">디앤카페 카라멜라떼 캔 1000원</span></p>
-  <p><span class="num">3열 8번</span> <span class="name">디앤카페 카라멜라떼 캔 1000원</span></p>
-  <p><span class="num">3열 9번</span> <span class="name">데자와 로얄 밀크티 캔 900원</span></p>
-  <p><span class="num">3열 10번</span> <span class="name">데자와 로얄 밀크티 캔 900원</span></p>
+  <p><span class="num">3열 1번</span><span class="name">디앤카페 오리지널</span> <span class="type">캔 700원</span></p>
+  <p><span class="num">3열 2번</span><span class="name">디앤카페 오리지널</span> <span class="type">캔 700원</span></p>
+  <p><span class="num">3열 3번</span><span class="name">디앤카페 오리지널</span> <span class="type">캔 700원</span></p>
+  <p><span class="num">3열 4번</span><span class="name">디앤카페 오리지널</span> <span class="type">캔 700원</span></p>
+  <p><span class="num">3열 5번</span><span class="name">디앤카페 카라멜라떼</span> <span class="type">캔 1000원</span></p>
+  <p><span class="num">3열 6번</span><span class="name">디앤카페 카라멜라떼</span> <span class="type">캔 1000원</span></p>
+  <p><span class="num">3열 7번</span><span class="name">디앤카페 카라멜라떼</span> <span class="type">캔 1000원</span></p>
+  <p><span class="num">3열 8번</span><span class="name">디앤카페 카라멜라떼</span> <span class="type">캔 1000원</span></p>
+  <p><span class="num">3열 9번</span><span class="name">데자와 로얄 밀크티</span> <span class="type">캔 900원</span></p>
+  <p><span class="num">3열 10번</span><span class="name">데자와 로얄 밀크티</span> <span class="type">캔 900원</span></p>
 
   <hr>
 
