@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>자판기 안내</title>
+
+<style>
+body { font-size:18px; line-height:1.5; padding:12px; margin:0; }
+h2 { font-size:22px; margin:0 0 8px 0; }
+.info { font-size:16px; margin-bottom:12px; }
+p { margin:6px 0; }
+hr { margin:16px 0; }
+
+.btn {
+display:block;
+width:100%;
+height:60px;
+line-height:60px;
+margin:14px 0;
+font-size:16px;
+font-weight:bold;
+border-radius:8px;
+background:#333;
+color:#fff;
+text-align:center;
+}
+
+.num { font-weight:bold; }
+</style>
+
+<script>
+function toggleLargeText() {
+document.body.classList.toggle('large-text');
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>자판기 상품 목록</h2>
+
+<button class="btn" onclick="toggleLargeText()">
+확대해서 보려면 터치하세요
+</button>
+
+<hr>
+
+<p aria-label="1열 1번 위치, 데미소다 애플, 캔 900원"><span class="num">1열 1번</span><span class="name">데미소다 애플</span><span class="type">캔 900원</span></p>
+
+<p aria-label="1열 2번 위치, 데미소다 복숭아, 캔 900원"><span class="num">1열 2번</span><span class="name">데미소다 복숭아</span><span class="type">캔 900원</span></p>
+
+<p aria-label="1열 3번 위치, 데미소다 레몬, 캔 900원"><span class="num">1열 3번</span><span class="name">데미소다 레몬</span><span class="type">캔 900원</span></p>
+
+<p aria-label="1열 4번 위치, 오란씨 오렌지, 캔 800원"><span class="num">1열 4번</span><span class="name">오란씨 오렌지</span><span class="type">캔 800원</span></p>
+
+<p aria-label="1열 5번 위치, 오란씨 파인애플, 캔 800원"><span class="num">1열 5번</span><span class="name">오란씨 파인애플</span><span class="type">캔 800원</span></p>
+
+<p aria-label="1열 6번 위치, 오로나민씨, 병 1000원"><span class="num">1열 6번</span><span class="name">오로나민씨</span><span class="type">병 1000원</span></p>
+
+<p aria-label="1열 7번 위치, 포카리스웨트, 페트 1800원"><span class="num">1열 7번</span><span class="name">포카리스웨트</span><span class="type">페트 1800원</span></p>
+
+<p aria-label="1열 8번 위치, 마신다 생수, 페트 800원"><span class="num">1열 8번</span><span class="name">마신다 생수</span><span class="type">페트 800원</span></p>
+
+<p aria-label="1열 9번 위치, 마신다 생수, 페트 800원"><span class="num">1열 9번</span><span class="name">마신다 생수</span><span class="type">페트 800원</span></p>
+
+<p aria-label="1열 10번 위치, 마신다 생수, 페트 800원"><span class="num">1열 10번</span><span class="name">마신다 생수</span><span class="type">페트 800원</span></p>
+
+<p aria-label="2열 1번 위치, 포카리스웨트, 캔 1000원"><span class="num">2열 1번</span><span class="name">포카리스웨트</span><span class="type">캔 1000원</span></p>
+
+<p aria-label="2열 2번 위치, 포카리스웨트, 캔 1000원"><span class="num">2열 2번</span><span class="name">포카리스웨트</span><span class="type">캔 1000원</span></p>
+
+<p aria-label="2열 3번 위치, 포카리스웨트, 캔 1000원"><span class="num">2열 3번</span><span class="name">포카리스웨트</span><span class="type">캔 1000원</span></p>
+
+<p aria-label="2열 4번 위치, 오라떼 딸기, 캔 900원"><span class="num">2열 4번</span><span class="name">오라떼 딸기</span><span class="type">캔 900원</span></p>
+
+<p aria-label="2열 5번 위치, 컨피던스, 캔 900원"><span class="num">2열 5번</span><span class="name">컨피던스</span><span class="type">캔 900원</span></p>
+
+<p aria-label="2열 6번 위치, 나랑드사이다 제로, 캔 800원"><span class="num">2열 6번</span><span class="name">나랑드사이다 제로</span><span class="type">캔 800원</span></p>
+
+<p aria-label="2열 7번 위치, 나랑드사이다 제로, 캔 800원"><span class="num">2열 7번</span><span class="name">나랑드사이다 제로</span><span class="type">캔 800원</span></p>
+
+<p aria-label="2열 8번 위치, 데미소다 청포도, 캔 900원"><span class="num">2열 8번</span><span class="name">데미소다 청포도</span><span class="type">캔 900원</span></p>
+
+<p aria-label="2열 9번 위치, 데미소다 청포도, 캔 900원"><span class="num">2열 9번</span><span class="name">데미소다 청포도</span><span class="type">캔 900원</span></p>
+
+<p aria-label="2열 10번 위치, 포카리스웨트, 캔 1000원"><span class="num">2열 10번</span><span class="name">포카리스웨트</span><span class="type">캔 1000원</span></p>
+
+<p aria-label="3열 1번 위치, 디앤카페 오리지널, 캔 700원"><span class="num">3열 1번</span><span class="name">디앤카페 오리지널</span><span class="type">캔 700원</span></p>
+
+<p aria-label="3열 2번 위치, 디앤카페 오리지널, 캔 700원"><span class="num">3열 2번</span><span class="name">디앤카페 오리지널</span><span class="type">캔 700원</span></p>
+
+<p aria-label="3열 3번 위치, 디앤카페 오리지널, 캔 700원"><span class="num">3열 3번</span><span class="name">디앤카페 오리지널</span><span class="type">캔 700원</span></p>
+
+<p aria-label="3열 4번 위치, 디앤카페 오리지널, 캔 700원"><span class="num">3열 4번</span><span class="name">디앤카페 오리지널</span><span class="type">캔 700원</span></p>
+
+<p aria-label="3열 5번 위치, 디앤카페 카라멜라떼, 캔 1000원"><span class="num">3열 5번</span><span class="name">디앤카페 카라멜라떼</span><span class="type">캔 1000원</span></p>
+
+<p aria-label="3열 6번 위치, 디앤카페 카라멜라떼, 캔 1000원"><span class="num">3열 6번</span><span class="name">디앤카페 카라멜라떼</span><span class="type">캔 1000원</span></p>
+
+<p aria-label="3열 7번 위치, 디앤카페 카라멜라떼, 캔 1000원"><span class="num">3열 7번</span><span class="name">디앤카페 카라멜라떼</span><span class="type">캔 1000원</span></p>
+
+<p aria-label="3열 8번 위치, 디앤카페 카라멜라떼, 캔 1000원"><span class="num">3열 8번</span><span class="name">디앤카페 카라멜라떼</span><span class="type">캔 1000원</span></p>
+
+<p aria-label="3열 9번 위치, 데자와 로얄 밀크티, 캔 900원"><span class="num">3열 9번</span><span class="name">데자와 로얄 밀크티</span><span class="type">캔 900원</span></p>
+
+<p aria-label="3열 10번 위치, 데자와 로얄 밀크티, 캔 900원"><span class="num">3열 10번</span><span class="name">데자와 로얄 밀크티</span><span class="type">캔 900원</span></p>
+
+<hr>
+
+<a href="https://naver.me/xB7DoOjr" class="btn">
+오류 제보하기
+</a>
+
+<p style="text-align:center; margin-top:20px;">
+제작: 두다닷<br>
+문의: dodadot@naver.com
+</p>
+
+</body>
+</html>
