@@ -35,10 +35,12 @@ hr {
   margin: 16px 0;
 }
 
+/* 버튼 (길이 동일 핵심) */
 .btn {
   display: block;
   width: 100%;
-  padding: 14px;
+  height: 60px;
+  line-height: 60px;
   margin: 14px 0;
   font-size: 16px;
   font-weight: bold;
@@ -47,6 +49,9 @@ hr {
   background-color: #333;
   color: #fff;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
 }
 
@@ -100,8 +105,9 @@ hr {
 }
 
 .large-text .btn {
+  height: 90px;
+  line-height: 90px;
   font-size: 28px;
-  padding: 20px;
 }
 
 .large-text .num,
@@ -125,9 +131,9 @@ function toggleLargeText() {
 
   const button = document.getElementById("toggleButton");
   if (document.body.classList.contains("large-text")) {
-    button.textContent = "기본 크기로 보려면 이 버튼을 터치하세요";
+    button.textContent = "기본 크기로 보려면 터치하세요";
   } else {
-    button.textContent = "확대해서 보려면 이 버튼을 터치하세요";
+    button.textContent = "확대해서 보려면 터치하세요";
   }
 }
 </script>
@@ -143,7 +149,7 @@ function toggleLargeText() {
 </p>
 
 <button id="toggleButton" class="btn" onclick="toggleLargeText()">
-확대해서 보려면 이 버튼을 터치하세요
+확대해서 보려면 터치하세요
 </button>
 
 <hr>
@@ -199,150 +205,4 @@ function toggleLargeText() {
 <p aria-label="1열 9번 위치, 마신다 생수, 페트, 800원">
 <span class="num">1열 9번</span>
 <span class="name">마신다 생수</span>
-<span class="type">페트 800원</span>
-</p>
-
-<p aria-label="1열 10번 위치, 마신다 생수, 페트, 800원">
-<span class="num">1열 10번</span>
-<span class="name">마신다 생수</span>
-<span class="type">페트 800원</span>
-</p>
-
-<hr>
-
-<p aria-label="2열 1번 위치, 포카리스웨트, 캔, 1000원">
-<span class="num">2열 1번</span>
-<span class="name">포카리스웨트</span>
-<span class="type">캔 1000원</span>
-</p>
-
-<p aria-label="2열 2번 위치, 포카리스웨트, 캔, 1000원">
-<span class="num">2열 2번</span>
-<span class="name">포카리스웨트</span>
-<span class="type">캔 1000원</span>
-</p>
-
-<p aria-label="2열 3번 위치, 포카리스웨트, 캔, 1000원">
-<span class="num">2열 3번</span>
-<span class="name">포카리스웨트</span>
-<span class="type">캔 1000원</span>
-</p>
-
-<p aria-label="2열 4번 위치, 오라떼 딸기, 캔, 900원">
-<span class="num">2열 4번</span>
-<span class="name">오라떼 딸기</span>
-<span class="type">캔 900원</span>
-</p>
-
-<p aria-label="2열 5번 위치, 컨피던스, 캔, 900원">
-<span class="num">2열 5번</span>
-<span class="name">컨피던스</span>
-<span class="type">캔 900원</span>
-</p>
-
-<p aria-label="2열 6번 위치, 나랑드사이다 제로, 캔, 800원">
-<span class="num">2열 6번</span>
-<span class="name">나랑드사이다 제로</span>
-<span class="type">캔 800원</span>
-</p>
-
-<p aria-label="2열 7번 위치, 나랑드사이다 제로, 캔, 800원">
-<span class="num">2열 7번</span>
-<span class="name">나랑드사이다 제로</span>
-<span class="type">캔 800원</span>
-</p>
-
-<p aria-label="2열 8번 위치, 데미소다 청포도, 캔, 900원">
-<span class="num">2열 8번</span>
-<span class="name">데미소다 청포도</span>
-<span class="type">캔 900원</span>
-</p>
-
-<p aria-label="2열 9번 위치, 데미소다 청포도, 캔, 900원">
-<span class="num">2열 9번</span>
-<span class="name">데미소다 청포도</span>
-<span class="type">캔 900원</span>
-</p>
-
-<p aria-label="2열 10번 위치, 포카리스웨트, 캔, 1000원">
-<span class="num">2열 10번</span>
-<span class="name">포카리스웨트</span>
-<span class="type">캔 1000원</span>
-</p>
-
-<hr>
-
-<p aria-label="3열 1번 위치, 디앤카페 오리지널, 캔, 700원">
-<span class="num">3열 1번</span>
-<span class="name">디앤카페 오리지널</span>
-<span class="type">캔 700원</span>
-</p>
-
-<p aria-label="3열 2번 위치, 디앤카페 오리지널, 캔, 700원">
-<span class="num">3열 2번</span>
-<span class="name">디앤카페 오리지널</span>
-<span class="type">캔 700원</span>
-</p>
-
-<p aria-label="3열 3번 위치, 디앤카페 오리지널, 캔, 700원">
-<span class="num">3열 3번</span>
-<span class="name">디앤카페 오리지널</span>
-<span class="type">캔 700원</span>
-</p>
-
-<p aria-label="3열 4번 위치, 디앤카페 오리지널, 캔, 700원">
-<span class="num">3열 4번</span>
-<span class="name">디앤카페 오리지널</span>
-<span class="type">캔 700원</span>
-</p>
-
-<p aria-label="3열 5번 위치, 디앤카페 카라멜라떼, 캔, 1000원">
-<span class="num">3열 5번</span>
-<span class="name">디앤카페 카라멜라떼</span>
-<span class="type">캔 1000원</span>
-</p>
-
-<p aria-label="3열 6번 위치, 디앤카페 카라멜라떼, 캔, 1000원">
-<span class="num">3열 6번</span>
-<span class="name">디앤카페 카라멜라떼</span>
-<span class="type">캔 1000원</span>
-</p>
-
-<p aria-label="3열 7번 위치, 디앤카페 카라멜라떼, 캔, 1000원">
-<span class="num">3열 7번</span>
-<span class="name">디앤카페 카라멜라떼</span>
-<span class="type">캔 1000원</span>
-</p>
-
-<p aria-label="3열 8번 위치, 디앤카페 카라멜라떼, 캔, 1000원">
-<span class="num">3열 8번</span>
-<span class="name">디앤카페 카라멜라떼</span>
-<span class="type">캔 1000원</span>
-</p>
-
-<p aria-label="3열 9번 위치, 데자와 로얄 밀크티, 캔, 900원">
-<span class="num">3열 9번</span>
-<span class="name">데자와 로얄 밀크티</span>
-<span class="type">캔 900원</span>
-</p>
-
-<p aria-label="3열 10번 위치, 데자와 로얄 밀크티, 캔, 900원">
-<span class="num">3열 10번</span>
-<span class="name">데자와 로얄 밀크티</span>
-<span class="type">캔 900원</span>
-</p>
-
-<hr>
-
-<a href="https://naver.me/xB7DoOjr" class="btn">오류 제보하기</a>
-
-<div class="logo-wrap">
-<img src="dudat-logo.png" alt="두다닷 로고">
-<div class="logo-text">
-제작: 두다닷<br>
-문의: dodadot@naver.com
-</div>
-</div>
-
-</body>
-</html>
+<span class="type">페
